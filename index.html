@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>HTML & CSS Examples</title>
+</head>
+<body>
+
+  <!-- Headings -->
+  <header id="main-header">
+    <h1>HTML & CSS Comprehensive Guide</h1>
+  </header>
+
+  <main>
+    <!-- HTML TAGS -->
+    <section>
+        <h2>HTML Tag Examples</h2>
+
+        <!-- Headings -->
+        <article>
+            <h3>Headings</h3>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </article>
+
+        <!-- Paragraphs -->
+        <article>
+            <h3>Paragraphs</h3>
+            <p class="paragraph">This is a standard paragraph. It's used for most of the text on a webpage.</p>
+        </article>
+
+        <!-- Text Formatting -->
+        <article>
+            <h3>Text Formatting</h3>
+            <p><b>Bold text</b> using &lt;b&gt;.</p>
+            <p><i>Italic text</i> using &lt;i&gt;.</p>
+            <p><u>Underlined text</u> using &lt;u&gt;.</p>
+            <p><strong>Strong importance text</strong> using &lt;strong&gt; (semantically important).</p>
+            <p><em>Emphasized text</em> using &lt;em&gt; (semantically emphasized).</p>
+            <p>This is <mark>marked or highlighted</mark> text.</p>
+            <p><small>This is small text.</small></p>
+            <p>This is <del>deleted text</del>.</p>
+            <p>This is <ins>inserted text</ins>.</p>
+            <p>This is <sub>subscript</sub> text.</p>
+            <p>This is <sup>superscript</sup> text.</p>
+        </article>
+
+        <!-- Links -->
+        <article>
+            <h3>Links</h3>
+            <a href="https://www.google.com">This is a link to Google.</a>
+            <br>
+            <a href="https://www.google.com" target="_blank">This link opens in a new tab.</a>
+        </article>
+
+        <!-- Images -->
+        <article>
+            <h3>Images</h3>
+            <p>Image with alt text (good for accessibility):</p>
+            <img src="https://via.placeholder.com/150" alt="A 150x150 placeholder image.">
+            <p>Image without alt text (bad for accessibility):</p>
+            <img src="https://via.placeholder.com/150">
+        </article>
+
+        <!-- Lists -->
+        <article>
+            <h3>Lists</h3>
+            <h4>Unordered List</h4>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+            <h4>Ordered List</h4>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        </article>
+
+        <!-- Table -->
+        <article>
+            <h3>Table</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <!-- Forms -->
+        <article>
+            <h3>Forms</h3>
+            <form action="/submit_form" method="post">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+                <label>Choose a car:</label>
+                <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+                </select><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50">Enter your message here.</textarea><br><br>
+
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br><br>
+
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+
+        <!-- Quotes -->
+        <article>
+            <h3>Quotes</h3>
+            <p>Here is a quote from WWF's website:</p>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+            </blockquote>
+            <p>This is an inline quote: <q>Build a future where people live in harmony with nature.</q></p>
+        </article>
+
+        <!-- Code and Computer Output -->
+        <article>
+            <h3>Code and Computer Output</h3>
+            <p>The <code>&lt;p&gt;</code> tag is for paragraphs.</p>
+            <pre>
+                <code>
+                function helloWorld() {
+                    console.log("Hello, world!");
+                }
+                </code>
+            </pre>
+            <p>The area of a triangle is: 1/2 * <var>b</var> * <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the height.</p>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text.</p>
+            <p><samp>File not found.<br>Press F1 to continue</samp></p>
+        </article>
+
+        <!-- Div and Span -->
+        <article>
+            <h3>Div and Span</h3>
+            <div class="my-div">
+                This is a div, which is a block-level container.
+            </div>
+            <p>
+                This is a paragraph with a <span class="my-span">span</span> inside it. A span is an inline container.
+            </p>
+        </article>
+    </section>
+
+    <!-- CSS Property Examples -->
+    <section>
+        <h2>CSS Property Examples</h2>
+
+        <h3>Box Model</h3>
+        <div class="box-model-example">This div demonstrates the box model (padding, border, margin).</div>
+
+        <h3>Display Property</h3>
+        <p>
+            This is a paragraph with an <span class="display-inline">inline element</span> inside.
+            <span class="display-block">This is a block element.</span>
+            It forces a new line.
+        </p>
+
+        <h3>Positioning</h3>
+        <div class="position-relative">
+            This is a relatively positioned container.
+            <div class="position-absolute">This is an absolutely positioned element.</div>
+            <div class="position-absolute-z-index">This element has a higher z-index.</div>
+        </div>
+        <div class="position-fixed">This is a fixed element.</div>
+        <div class="position-sticky-container">
+            <div class="position-sticky">This is a sticky element.</div>
+            <p>Scroll down to see the sticky effect. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</p>
+        </div>
+
+
+        <h3>Keyframe Animations</h3>
+        <div class="animation-example"></div>
+
+        <h3>Flexbox</h3>
+        <div class="flex-container">
+            <div class="flex-item">Flex Item 1</div>
+            <div class="flex-item">Flex Item 2</div>
+            <div class="flex-item">Flex Item 3</div>
+        </div>
+
+        <h3>Grid</h3>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">10</div>
+            <div class="grid-item">11</div>
+            <div class="grid-item">12</div>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Semantic Elements -->
+  <footer>
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#">Contact</a>
+    </nav>
+    <p>Copyright &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
