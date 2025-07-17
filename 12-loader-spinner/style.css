@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  border:none;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #11fd1120;
+}
+.outerbox{
+  width:100px;
+  height: 50px;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  width: 30px;
+  height: 30px;
+  border:10px solid #ffffff20;
+  border-bottom: 10px solid white;
+
+  border-radius: 50%;
+  animation: spin 1s forwards infinite;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  /* 50%{
+    transform: rotate(180deg);
+  } */
+  100%{
+    transform: rotate(360deg);
+  }
+}
